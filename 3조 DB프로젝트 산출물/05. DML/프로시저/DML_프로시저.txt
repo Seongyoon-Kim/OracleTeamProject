@@ -1,0 +1,178 @@
+-- 교육생 성별을 구하는 프로시저
+
+create or replace function fnGender(
+    pssn varchar2
+)return varchar2
+is
+begin
+    return case
+                when substr(pssn, 8, 1) = '1' then '남자'
+                when substr(pssn, 8, 1) = '2' then '여자'
+           end;
+end fnGender;
+
+--------------------------------------------------------------------
+
+-- 교육생 성별을 구하는 함수
+create or replace function fnGender(
+    pssn varchar2
+)return varchar2
+is
+begin
+    return case
+                when substr(pssn, 1, 1) = '1' then '남자'
+                when substr(pssn, 1, 1) = '2' then '여자'
+           end;
+end fnGender;
+
+select  from tblstudnet;
+
+--------------------------------------------------------------------
+
+/*교육생 수정 프로시저*/
+create or replace procedure procStudentrModify (
+    pseq number,   --교육생번호
+    pnum number,   --수정할 컬럼번호
+    pinput varchar2 --입력받은 값
+)
+is
+begin
+    if pnum = 1 then update tblStudent set name = pinput where studentseq= pseq;
+    elsif pnum = 2 then update tblStudent set phoneNumber = pinput where studentseq= pseq;
+    elsif pnum = 3 then update tblStudent set ssn = pinput where studentseq= pseq;
+    elsif pnum = 4 then update tblStudent set enrollDate = pinput where studentseq= pseq;
+    elsif pnum = 5 then update tblStudent set birth = pinput where studentseq= pseq;
+    elsif pnum = 6 then update tblStudent set condition = pinput where studentseq= pseq;
+    elsif pnum = 7 then update tblStudent set dropDate = pinput where studentseq= pseq;
+    end if;
+end procStudentrModify;
+/
+
+begin
+procStudentrModify(1, 1, '신보경');
+end;
+/
+
+
+select * from tblStudent;
+/
+
+----------------------------------------------------------------------
+
+/*개설과목 수정 프로시저*/
+create or replace procedure procOpenSubModify (
+    pseq number,   --개설과목고유번호
+    pnum number,   --수정할 컬럼번호
+    pinput varchar2 --입력받은 값
+)
+is
+begin
+    if pnum = 1 then update tblOpenSubject set beginDate = pinput where openSubjectSeq= pseq;
+    elsif pnum = 2 then update tblOpenSubject set endDate = pinput where openSubjectSeq= pseq;
+    elsif pnum = 3 then update tblOpenSubject set openCourseSeq = pinput where openSubjectSeq= pseq;
+    elsif pnum = 4 then update tblOpenSubject set totalSubjectSeq = pinput where openSubjectSeq= pseq;
+    elsif pnum = 5 then update tblOpenSubject set  period = pinput where openSubjectSeq= pseq;
+    end if;
+    
+    
+end procOpenSubModify;
+/
+
+begin
+procOpenSubModify(1, 5, '20일');
+end;
+/
+
+
+select * from tblOpenSubject;
+/
+
+
+----------------------------------------------------------------------
+
+/*시험문제 수정 프로시저*/
+create or replace procedure procTestQuestionModify (
+    pseq number,   -- 시험문제 고유번호
+    pnum number,   --수정할 컬럼번호
+    pinput varchar2 --입력받은 값
+)
+is
+begin
+    if pnum = 1 then update tblTestQuestion set testQusetion = pinput where testQuestionSeq= pseq;
+    elsif pnum = 2 then update tblTestQuestion set answer = pinput where testQuestionSeq= pseq;
+    elsif pnum = 3 then update tblTestQuestion set registrationStatusSeq = pinput where testQuestionSeq= pseq;
+    end if;
+    
+    
+end procTestQuestionModify;
+/
+
+begin
+procTestQuestionModify(1, 2, 'O');
+end;
+/
+
+
+select * from tblTestQuestion;
+/
+
+-----------------------------------------------------------------------
+
+/*전체교재 수정 프로시저*/
+create or replace procedure procAllBookModify (
+    pseq number,   --전체교재고유번호
+    pnum number,   --수정할 컬럼번호
+    pinput varchar2 --입력받은 값
+)
+is
+begin
+    if pnum = 1 then update tblAllBook set name = pinput where allBookSeq= pseq;
+    elsif pnum = 2 then update tblAllBook set  publisher= pinput where allBookSeq= pseq;
+    elsif pnum = 3 then update tblAllBook set writer = pinput where allBookSeq= pseq;
+    elsif pnum = 4 then update tblAllBook set price = pinput where allBookSeq= pseq;
+
+    end if;
+end procAllBookModify;
+/
+
+begin
+procAllBookModify(1, 1, '안녕하세요');
+end;
+/
+
+
+select * from tblAllBook;
+/
+
+----------------------------------------------------------------------
+-- 구인공고 수정 프로시저
+create or replace procedure proctblJobPostU (
+    pseq number,   --구인공고고유번호
+    pnum number,   --수정할 컬럼번호
+    pinput varchar2 --입력받은 값
+)
+is
+begin
+    if pnum = 1 then update tblJobPost set recruitField = pinput where jobPostSeq= pseq;
+    elsif pnum = 2 then update tblJobPost set companyName = pinput where jobPostSeq= pseq;
+    elsif pnum = 3 then update tblJobPost set recruitBegin = pinput where jobPostSeq= pseq;
+    elsif pnum = 4 then update tblJobPost set recruitEnd = pinput where jobPostSeq= pseq;
+    elsif pnum = 5 then update tblJobPost set career = pinput where jobPostSeq= pseq;
+    elsif pnum = 6 then update tblJobPost set educationLevel = pinput where jobPostSeq= pseq;
+    elsif pnum = 7 then update tblJobPost set annualIncom = pinput where jobPostSeq= pseq;
+    elsif pnum = 8 then update tblJobPost set workArea = pinput where jobPostSeq= pseq;
+    elsif pnum = 9 then update tblJobPost set workTime = pinput where jobPostSeq= pseq;
+    elsif pnum = 10 then update tblJobPost set selectionCount = pinput where jobPostSeq= pseq;
+    end if;
+end proctblJobPostU;
+/
+
+begin
+proctblJobPostU(1, 2, '로레알');
+end;
+/
+
+select * from tblJobPost;
+
+----------------------------------------------------------------------
+

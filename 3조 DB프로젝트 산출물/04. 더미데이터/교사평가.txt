@@ -1,0 +1,32 @@
+-- 교사평가
+
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '가끔 진도를 너무 빨리 나가셔서 따라가기 힘들었어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '너무 어려운 용어를 자주 사용하셔서 이해하기가 힘들었어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '진도가 다른 반보다 느려서 조금 답답했어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '설명을 드문드문 하셔서 이해를 못하고 넘어간 개념들이 많았어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '마스크 때문에 그렇긴 하지만 목소리가 작으셔서 수업 내용이 잘 안들렸어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '수업 중간에 수업이랑 상관없는 얘기로 빠지는 경우가 많았어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '이해가 잘 안되는 내용은 이해가 될 때까지 설명해주셔서 좋았어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '세세한 부분도 놓치지 않고 설명해주셔서 좋았어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '가끔 수업이랑 관련 없는 얘기도 해주시지만 그래도 도움이 되는 내용들도 많았어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '회사랑, 취직 관련한 얘기랑 자격증 얘기를 해주셔서 현실에 대해 알아서 좋았어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '공부할 때 어떤 식으로 해야할 지 단계적으로 알려주셔서 공부할 때 도움이 많이 됐어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '포기하고 싶을때 상담을 받으면서 힘을 얻을 수 있었어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '비전공자들도 충분히 할 수 있다고 항상 긍정적인 말씀을 해주셔서 포기하지 않을 수 있었어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '전공자들도 방심하지 말고 열심히 하라는 말씀이 와닿았습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '전공자, 비전공자 상관없이 모두 잘되기를 바라시는 모습을 보면서 감동을 받았습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '수업 시간 이외에도 질문도 잘 받아주시고 자세하게 알려주셔서 좋았습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '어떤 회사가 좋은 회사인지 알려주셔서 취업할 때 참고하기 좋았어요');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '가끔은 따끔한 소리도 해주셔서 정신을 번쩍 들게 해주셨습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '저는 좋은 소리만 듣는걸 안좋아하는데 항상 잔소리 아닌 잔소리를 해주셔서 정신차릴 수 있었습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '비전공자로서, 할 수 있을지 자신감이 많이 부족했는데 좋은 말씀도 많이 해주시고 잘 알려주셔서 열심히 따라올 수 있었습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '쌍용교육센터 오길 진짜 잘한거 같아요. 항상 친절하게 답변해주셔서 너무 좋았습니다!');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '비전공자라 처음에 적응하기 힘들었지만 선생님께서 계속해서 좋은 얘기 해주셔서 수료까지 할 수 있던거 같습니다! ');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '같은 분야를 희망하는 친구들과 소통하면서 배울 수 있어서 너무 좋은 경험이었습니다ㅎㅎ');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '비전공자라 실제로 프로젝트를 해볼 경험이 없었는데 여기 와서 여러 프로젝트를 해보면서 실력도 많이 늘고 많은 경험해서 좋았습니다!ㅎㅎ');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '초반에 그만둬야할까 망설였는데 운좋게도 좋은 조원들을 만나 격려 받으며 무사히 마칠 수 있었습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '긴 시간동안 공부하면서 힘들었지만 선생님 강의실력이 좋아서 좋은  프로젝트결과물을 낼 수 있었습니다.');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '취업하기전에 실력이 많이 부족하다고 판단되어 다닌 학원인데 좋은 선생님을 만나서 실력잘 쌓고 갑니다');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '실습을 위주로 강의하셔서 실력이 많이 늘어서 나갑니다! 쌍용 짱짱 최고');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, '수업에 어려움이 있을때 선생님께서 상담때 해주신 말씀 덕분에 의지를 다잡을 수 있었습니다. 감사합니다 선생님');
+INSERT INTO tblTeacherSurvey (teacherSurveySeq, studentComment) values (teacherSurveySeq.nextVal, ' 전공임에도 불구하고 개념이 이해 안됐는데 짧은 기간동안 좋은 선생님 만나서 실력 많이 키우고 갑니다.');

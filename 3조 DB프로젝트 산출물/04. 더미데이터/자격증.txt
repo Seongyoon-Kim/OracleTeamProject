@@ -1,0 +1,27 @@
+-- 자격증 정보
+-- 자격명, 자격증 종류, 시험기관, 회차, 접수비, 필기시험 원서접수 시작날짜, 필기시험 원서접수 종료날짜, 필기시험 날짜, 필기시험 합격자 발표 날짜, 응시자격 서류제출 시작날짜, 응시자격 서류제출 종료날짜, 실기시험 원서접수 시작날짜, 실기시험 원서접수 종료날짜, 실기시험 날짜, 실기시험 합격자발표 날짜
+
+
+-- 1. 정보관리기술사, 국가기술자격, 한국산업인력공단, 125회, 67800, 2021/07/07, 2021/07/09, 2021/07/31, 2021/09/10, , , 2021/09/13, 2021/09/16, 2021/11/12
+
+-- 2. 정보기기운용기능사, 국가기술자격, 한국산업인력공단, 3회, 14500, 2021/06/08, 2021/06/11, 2021/06/27, , , 2021/07/16, 2021/07/19, 2021/07/22, 2021/08/21, 2021/09/17
+
+-- 3. 정보처리기능사, 국가기술자격, 한국산업인력공단, 3회, 14500, 2021/06/08, 2021/06/11, 2021/06/27 ~ 2021/07/03, 2021/07/16, , , 2021/07/19, 2021/07/22, 2021/08/21 ~ 2021/09/08, 2021/10/01
+
+-- 4. 정보처리기사, 국가기술자격, 한국산업인력공단, 3회, 19400, 2021/07/12, 2021/07/15, 2021/08/14, 2021/09/01, , , 2021/09/13, 2021/09/16, 2021/10/16 ~ 2021/10/29, 2021/11/26
+
+-- 5. 정보처리산업기사, 국가기술자격, 한국산업인력공단, 3회, 19400, 2021/07/13, 2021/07/16, 2021/08/08 ~ 2021/08/18, 2021/09/01, , , 2021/09/14, 2021/09/17, 2021/10/16 ~ 2021/10/29, 2021/11/26
+
+-- 6. 컴퓨터시스템응용기술사, 국가기술자격, 한국산업인력공단, 125회, 67800, 2021/07/06, 2021/07/09, 2021/07/31, 2021/09/10, , , 2021/09/13, 2021/09/16, 2021/10/16 ~ 2021/10/26, 2021/11/12
+
+INSERT INTO tblLicense (licenseSeq, name, licenseType, testAgency, round, receptionFee, writtenRegisterBegin, writtenRegisterEnd, writtenTestDate, writtenResultDate, practicalRegisterBegin, practicalRegisterEnd, practicalTestDate, practicalResultDate) values (licenseSeq.nextVal, '정보관리기술사', '국가기술자격', '한국산업인력공단', '125회', '67800', '2021/07/06', '2021/07/09', '2021/07/31', '2021/09/10', '2021/09/13', '2021/09/16', '2021/10/16 ~ 2021/10/26', '2021/11/12');
+
+INSERT INTO tblLicense (licenseSeq, name, licenseType, testAgency, round, receptionFee, writtenRegisterBegin, writtenRegisterEnd, writtenTestDate, writtenResultDate, practicalRegisterBegin, practicalRegisterEnd, practicalTestDate, practicalResultDate) values (licenseSeq.nextVal, '정보기기운용기능사', '국가기술자격', '한국산업인력공단', '3회', '14500', '2021/06/08', '2021/06/11', '2021/06/27', '2021/07/16', '2021/07/19', '2021/07/22', '2021/08/21', '2021/09/17');
+
+INSERT INTO tblLicense (licenseSeq, name, licenseType, testAgency, round, receptionFee, writtenRegisterBegin, writtenRegisterEnd, writtenTestDate, writtenResultDate, practicalRegisterBegin, practicalRegisterEnd, practicalTestDate, practicalResultDate) values (licenseSeq.nextVal, '정보처리기능사', '국가기술자격', '한국산업인력공단', '3회', '14500', '2021/06/08', '2021/06/11', '2021/06/27 ~ 2021/07/03', '2021/07/16', '2021/07/19', '2021/07/22', '2021/08/21 ~ 2021/09/08', '2021/10/01');
+
+INSERT INTO tblLicense (licenseSeq, name, licenseType, testAgency, round, receptionFee, writtenRegisterBegin, writtenRegisterEnd, writtenTestDate, writtenResultDate, practicalRegisterBegin, practicalRegisterEnd, practicalTestDate, practicalResultDate) values ('licenseSeq.nextVal', '정보처리기사', '국가기술자격', '한국산업인력공단', '3회', '19400', '2021/07/12', '2021/07/15', '2021/08/14', '2021/09/01', '2021/09/13', '2021/09/16', '2021/10/16 ~ 2021/10/29', '2021/11/26');
+
+INSERT INTO tblLicense (licenseSeq, name, licenseType, testAgency, round, receptionFee, writtenRegisterBegin, writtenRegisterEnd, writtenTestDate, writtenResultDate, practicalRegisterBegin, practicalRegisterEnd, practicalTestDate, practicalResultDate) values (licenseSeq.nextVal, '정보처리산업기사', '국가기술자격', '한국산업인력공단', '3회', '19400', '2021/07/13', '2021/07/16', '2021/08/08 ~ 2021/08/18', '2021/09/01', '2021/09/14', '2021/09/17', '2021/10/16 ~ 2021/10/29', '2021/11/26');
+
+INSERT INTO tblLicense (licenseSeq, name, licenseType, testAgency, round, receptionFee, writtenRegisterBegin, writtenRegisterEnd, writtenTestDate, writtenResultDate, practicalRegisterBegin, practicalRegisterEnd, practicalTestDate, practicalResultDate) values (licenseSeq.nextVal, '컴퓨터시스템응용기술사', '국가기술자격', '한국산업인력공단', '125회', '67800', '2021/07/06', '2021/07/09', '2021/07/31', '2021/09/10', '2021/09/13', '2021/09/16', '2021/10/16 ~ 2021/10/26', '2021/11/12');

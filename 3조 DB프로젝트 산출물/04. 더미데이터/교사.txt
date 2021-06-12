@@ -1,0 +1,25 @@
+-- 교사: 강의 인원(6명), 대기 인원(4명)
+-- 교사명, 주민번호(뒷자리) - 7자리, 전화번호, 현직/대기여부
+-- 1698912 1693889 1336896 1431653 1752757 1661624 1729593 1972958 1462878 1318642
+
+1. 채제원, 1698912, 010-5953-4044, 현직
+2. 곽우신, 1693889, 010-6331-5858, 현직
+3. 이응수, 1336896, 010-8284-5522, 대기
+4. 이창익, 1431653, 010-8210-5218, 현직
+5. 박세인, 1752757, 010-2114-1939, 현직
+6. 이규미, 2661624, 010-5822-5652, 대기
+7. 김호진, 1729593, 010-7991-3906, 대기
+8. 김현룡, 1972958, 010-1053-4028, 현직
+9. 김대기, 1462878, 010-7358-1664, 대기
+10. 서영학, 1318642, 010-4465-5021, 현직
+
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '채제원', '1698912', '010-5953-4044', '현직');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '곽우신', '1693889', '010-6331-5858', '현직');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '이응수', '1336896', '010-8284-5522', '대기');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '이창익', '1431653', '010-8210-5218', '현직');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '박세인', '1752757', '010-2114-1939', '현직');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '이규미', '2661624', '010-5822-5652', '대기');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '김호진', '1729593', '010-7991-3906', '대기');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '김현룡', '1972958', '010-1053-4028', '현직');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '김대기', '1462878', '010-7358-1664', '대기');
+INSERT INTO tblTeacher (teacherSeq, name, ssn, phoneNumber, condition) values (teacherSeq.nextVal, '서영학', '1318642', '010-4465-5021', '현직');

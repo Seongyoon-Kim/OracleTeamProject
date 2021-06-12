@@ -1,0 +1,7 @@
+-- 관리자
+
+INSERT INTO tblManager (managerSeq, managerPW) values (managerSeq.nextVal, '1122334');
+INSERT INTO tblManager (managerSeq, managerPW) values (managerSeq.nextVal, '2432511');
+INSERT INTO tblManager (managerSeq, managerPW) values (managerSeq.nextVal, '1111111');
+INSERT INTO tblManager (managerSeq, managerPW) values (managerSeq.nextVal, '2222222');
+INSERT INTO tblManager (managerSeq, managerPW) values (managerSeq.nextVal, '3333333');
